@@ -35,6 +35,7 @@ public class StudentAnalyzer {
      * @param scores danh sách điểm
      * @return điểm trung bình của các điểm hợp lệ
      */
+    
     public double calculateValidAverage(List<Double> scores) {
         // TODO: Sinh viên viết mã tại đây
         if (!scores.isEmpty()) {
