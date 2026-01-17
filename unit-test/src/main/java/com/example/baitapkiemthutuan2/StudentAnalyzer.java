@@ -1,3 +1,5 @@
+package com.example.baitapkiemthutuan2;
+
 import java.util.List;
 
 public class StudentAnalyzer {
@@ -35,23 +37,22 @@ public class StudentAnalyzer {
      * @param scores danh sách điểm
      * @return điểm trung bình của các điểm hợp lệ
      */
-    
     public double calculateValidAverage(List<Double> scores) {
         // TODO: Sinh viên viết mã tại đây
         if (!scores.isEmpty()) {
-            int count = 0;
-            Double scoresTotal = 0.0;
+            int count =0;
+            Double scoresAverage = 0.0;
             for (Double scDouble : scores) {
 
                 if (scDouble < 0 || scDouble > 10) {
                     continue;
                 } else {
-                    scoresTotal += scDouble;
+                    scoresAverage += scDouble;
                     count++;
                 }
 
             }
-            return scoresTotal / count;
+            return scoresAverage/count;
         }
         return 0;
     }
